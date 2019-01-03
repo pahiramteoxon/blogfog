@@ -1,0 +1,48 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.header {
+	width: 100%;
+}
+
+.top-search-area {
+    position: relative;
+    z-index: 1; }
+
+.top-search-area form {
+      position: relative;
+      z-index: 1;
+      border-left: 1px solid #838a8c;
+      border-right: 1px solid #838a8c;
+      padding: 0;
+}
+
+.top-search-area form input {
+	width:250px;
+	height:30px;
+	border: none;
+	color: #a6a6a6;
+    font-size: 14px;
+    /*font-style: italic;*/
+    padding: 0 20px;
+    background-color: transparent; 
+}
+
+/*#nav-div {
+  text-align: center;
+}
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  float: none;
+ 
+}*/
