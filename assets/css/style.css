@@ -1,10 +1,107 @@
+
 * {
 	margin:0;
 	padding: 0;
+
 }
 
 html, body {
 	height: 100%;
+  width: 100%;
+  
+}
+section {
+  margin-bottom: 2rem;
+}
+
+h1.display-5{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+#cover {
+  background: url(../images/darkdawn.jpg) center center no-repeat;
+  background-size: cover;
+  color: #eaebeb;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  } 
+
+  #cover:after{
+     content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:-1;
+  }
+
+#cover img{
+height: 100%;
+width: 100%;
+}
+
+.card-deck img {
+  height: 40vh;
+}
+
+#overlay {
+    background-color: #EEEEEE;
+    position: absolute;
+    z-index:100;
+}
+
+.dark {
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.text-overlay{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20% 0 2rem;
+    display: block;
+
+}
+
+.text-overlay span {
+  border-radius: 0 !important;
+}
+
+.image-wrapper .card {
+  border: 0;
+}
+
+.dark span {
+  right: 0;
+}
+
+.image-wrapper .row  {
+  height: 50%;
+}
+
+.image-wrapper {
+
+  height: 75vh;
+}
+
+
+
+#cover hr{
+  background-color: #fff;
 }
 
 .header {
@@ -62,6 +159,7 @@ html, body {
   color: #222;
 }
 
+<<<<<<< HEAD
 /*----------------------------*\
   social-icons on navbar
 \*----------------------------*/
@@ -79,6 +177,18 @@ html, body {
 
 #social-circle li i{
   line-height: 50px;
+=======
+.text-900 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5px;
+}
+
+/*#nav-div {
+>>>>>>> 5d011ea0ed2159875327803f2dabf852298a1300
   text-align: center;
 }
 
