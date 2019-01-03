@@ -9,29 +9,42 @@
 
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
 </head>
 <body>
 
 
-<div class="header bg-dark">
+
+<div class="navbar navbar-dark bg-light justify-content-between align-items-center w-100" id="social-icons">
+	<div class="mt-5 pl-5">		
+		<ul class="navbar-nav" id="social-circle">
+			<li><a href="" f="#" class="iconfb"><i class="fa fa-facebook fa-border"></i></a></li>
+			<li><a href="#" class="icontwitter"><i class="fa fa-twitter  fa-border"></i></a></li>
+			<li><a href="#" class="icongp"><i class="fa fa-google-plus  fa-border"></i></a></li>
+			<li><a href="#" class="iconinsta"><i class="fa fa-instagram  fa-border"></i></a></li>
+		</ul>
+					
+	</div>	
+	
+	<div class="nav-logo">
+		<a href="index.html" class="logo">
+			<img src="assets/images/Blogfog Logo.png" alt="">
+		</a>
+	</div>
+</div>	
+
+<br>
+
+<div class="header bg-light" id="header">
 <div class="top-meta-data d-flex align-items-center justify-content-end">
 
-<!-- 	<div class="navbar-header navbar-expand-lg navbar-dark bg-dark">
-		<a href="" class="navbar-brand">Logo</a>
-
-		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-		</ul>		
-	</div> -->
-
-
-	<div class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between align-items-center w-100">
-
+	<div class="navbar navbar-expand-lg justify-content-between align-items-center w-100">
+	<hr>	
 		<ul class="navbar-nav mx-auto text-center">
-			<li class="nav-item-active px-3">
+			<li class="nav-item px-3">
 				<a href="" class="nav-link">Home</a>
 			</li>
 			<li class="nav-item px-3">
@@ -66,7 +79,255 @@
 </div>
 </div>
 
+<div class="banner">
+	<div class="container">
+	<div class="banner-text">
+		<div class="banner-heading">
+		Glad to see you here !
+		</div>
+		<div class="banner-sub-heading">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. 
+		</div>
+	<button type="button" class="btn btn-warning text-dark btn-banner">Get started</button>
+	</div>
+	</div>
+</div>
+
+
+<!-- carousel -->
+
+<!-- <div class="carousel">
+<div id="carousel-home" class="carousel slide" data-ride="carousel">
 	
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-home" data-slide-to="0" class="active">
+			<div class="indicator-inner">
+				<span class="number">01</span>
+				<span class="text text-uppercase">Intro</span>
+			</div>
+		</li>
+		<li data-target="#carousel-home" data-slide-to="1">
+			<div class="indicator-inner">
+				<span class="number">01</span>
+				<span class="text text-uppercase">Intro 1</span>
+			</div>	
+		</li>
+		<li data-target="#carousel-home" data-slide-to="2">
+			<div class="indicator-inner">
+				<span class="number">01</span>
+				<span class="text text-uppercase">Intro 2</span>
+			</div>
+		</li>
+	</ol>
+
+	<div clas="carousel-inner">
+
+		<div class="carousel-item active">
+			<div class="carousel-caption">
+				<hgroup>
+		            <h1>LOREM LOREM LOREM</h1>        
+		            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		            tempor incididunt ut.</h3>
+		        </hgroup>
+			</div>
+		</div>
+
+		<div class="carousel-item ">
+			<div class="carousel-caption">
+				<hgroup>
+		            <h1>LOREM LOREM LOREM</h1>        
+		            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		            tempor incididunt ut.</h3>
+		        </hgroup>
+			</div>
+		</div>
+
+		<div class="carousel-item ">
+			<div class="carousel-caption">
+				<hgroup>
+		            <h1>LOREM LOREM LOREM</h1>        
+		            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		            tempor incididunt ut.</h3>
+		        </hgroup>
+			</div>
+		</div>
+
+	</div>
+
+	<a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	 </a>
+
+</div>
+</div> -->
+<!-- ///////////////// -->
+
+
+<!-- multiple carousel -->
+<br><br>
+<section>
+<div class="container">
+<div class="row blog">
+<div class="col-md-12">
+
+<hgroup>
+	<h1 class="editors-pick text-center">Editor's Picks</h1>        
+</hgroup>
+
+<br>
+<div id="blogCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#blogCarousel" data-slide-to="1"></li>
+    </ol>
+
+        <!-- Carousel items -->
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+        <div class="row">
+
+        <div class="col-md-3">
+            <a href="#">
+                <img src="assets/images/1.jpg" alt="Image" style="max-width:100%;">
+        </div>
+
+        <div class="col-md-3">
+            <a href="#">
+                <img src="assets/images/2.jpg" alt="Image" style="max-width:100%;">
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#">
+                <img src="assets/images/3.jpg" alt="Image" style="max-width:100%;">
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#">
+                <img src="assets/images/1.jpg" alt="Image" style="max-width:100%;">
+            </a>
+        </div>
+
+        </div>                    
+        </div>
+
+        <!--.item-->
+        <div class="carousel-item">
+            <div class="row">
+
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="assets/images/3.jpg" alt="Image" style="max-width:100%;">
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="assets/images/2.jpg" alt="Image" style="max-width:100%;">
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="assets/images/1.jpg" alt="Image" style="max-width:100%;">
+                </a>
+            </div>
+            
+            <div class="col-md-3">
+                <a href="#">
+                     <img src="assets/images/3.jpg" alt="Image" style="max-width:100%;">
+                </a>
+            </div>
+
+            </div>
+             <!--.row-->
+        </div>
+        <!--.item-->
+
+        <!--.item-->
+        <div class="carousel-item">
+            <div class="row">
+
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="assets/images/3.jpg" alt="Image" style="max-width:100%;">
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="assets/images/2.jpg" alt="Image" style="max-width:100%;">
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="assets/images/1.jpg" alt="Image" style="max-width:100%;">
+                </a>
+            </div>
+            
+            <div class="col-md-3">
+                <a href="#">
+                     <img src="assets/images/3.jpg" alt="Image" style="max-width:100%;">
+                </a>
+            </div>
+
+            </div>
+             <!--.row-->
+        </div>
+        <!--.item-->
+
+
+    </div>
+    <!--.carousel-inner-->
+</div>
+<!--.Carousel-->
+
+</div>
+</div>
+</div>
+</section>
+
+<br><br>
+<br><br>
+
+<!-- cards -->
+<div class="section">
+<div class="container">
+<div class="row"
+
+
+<div class="col-md-8">
+
+
+</div>
+
+
+<div class="col-md-4">
+
+
+</div>
+
+</div>
+</div>	
+</div>
+
+<!-- /////////////////// -->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
