@@ -2,7 +2,6 @@
 	margin:0;
 	padding: 0;
   box-sizing: border-box;
-
 }
 
 html, body {
@@ -12,21 +11,24 @@ html, body {
   font-size: 15px;
   
 }
-section {
-  margin-bottom: 6rem;
 
+section {
+  margin-bottom: 4rem;
 }
 
 h1.display-5{
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-
 }
 
- hr {
+hr {
   background-color: #2c2f33;
   height: 2px;
 }
+
+/*----------------------------------
+---------Header Cover-------------
+---------Category Page------------*/
 
 #cover {
   background: url(../images/darkdawn.jpg) center center no-repeat;
@@ -36,37 +38,36 @@ h1.display-5{
   text-align: center;
   position: relative;
   z-index: 1;
-  } 
+} 
 
-  #cover:after{
-     content:"";
-    position:absolute;
-    left:0
-    right:0;
-    top:0;
-    bottom:0;
-    margin:auto;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.5);
-    z-index:-1;
-  }
-
-  .card {
-  transition: box-shadow .3s;
-
-  border-radius:10px;
-  border: 1px solid #ccc;
-
-  }
-
-  .card:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.5); 
+#cover:after {
+  content:"";
+  position:absolute;
+  left:0
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  z-index:-1;
 }
 
-#cover img{
-height: 100%;
-width: 100%;
+#cover img {
+  height: 100%;
+  width: 100%;
+}
+
+/*---------Card Hover Box Shadow--------*/
+.card {
+  transition: box-shadow .3s;
+  border-radius:10px;
+  border: 1px solid #ccc;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.5); 
 }
 
 .card-deck img {
@@ -78,6 +79,8 @@ width: 100%;
     position: absolute;
     z-index:100;
 }
+
+/*-------Cards Overlay Background and Text------*/
 
 .dark {
   border-radius: 5px;
@@ -96,15 +99,14 @@ width: 100%;
 }
 
 .text-overlay{
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 0 20% 0 2rem;
-    display: block;
-
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 20% 0 2rem;
+  display: block;
 }
 
 .text-overlay span {
@@ -129,7 +131,6 @@ width: 100%;
 }
 
 #top-post .wrapper {
-
   background-color: #2c2f33;
 }
 
@@ -216,6 +217,28 @@ width: 100%;
   font-weight: bold;
   position: absolute;
   bottom: 5px;
+}
+
+.text-middle {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  color: #fff;
+  right: 25%;
+  text-align: center;
+  text-overflow: hidden;
+}
+
+.feature-cover img {
+  filter: brightness(50%);
+}
+
+.btn-custom {
+  background-color: #555;
 }
 
 #nav-div {
@@ -375,8 +398,8 @@ width: 100%;
 
 .nav-logo {
   position: absolute;
-  left: 55%;
-  height: auto;
+  left: 50%;
+  /*height: auto;*/
 
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -389,15 +412,12 @@ width: 100%;
   height: 70px;
 }
 
-.nav-logo .logo>img {
+/*.nav-logo .logo>img {
   width: 80%;
   max-height: 300px;
-}
+}*/
 
-#social-icons {
-  width: 100%;
-  height: 30%;
-}
+
 
 
 /*----------------------------*\
@@ -421,14 +441,12 @@ width: 100%;
   font-weight: bold;
   text-align: center;
   padding: 5px;
-CategoryPage
   font-family: 'Libre Baskerville', serif;
 }
 
 .card-image-left {
   display: inline-block;
   float: left;
-
 }
 
 #top-post a {
@@ -442,9 +460,8 @@ CategoryPage
 
 }
 
-#recent .card-body {
+#recent .card-body, .recent-card .card-body {
   position: absolute;
-  
   background-color: #fff;
   top: 45%;
   left: 6%;
@@ -468,12 +485,14 @@ CategoryPage
   }
 }
 
-#recent .card {
+.recent-card .card {
   display: inline-block;
   position: relative;
   height: 400px;
   border: none;
 }
+
+
 
 /* -----------------------------------*/
 /* ---------->>> GLOBAL <<<-----------*/
@@ -488,88 +507,9 @@ footer {
     text-align: justify;
 }
 
-.tags-widget ul li a:hover, .tags-widget ul li a:focus {
-    color: #fff !important;
-    background-color: #ee4266;
-}
-.tags-widget ul li a {
-    text-transform: uppercase;
-    display: block;
-    padding: 10px 15px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #97989b;
-    background-color: #323335;
-    border-radius: 2px;
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-}
-
-#footer a {
-    color: #97989b;
-}
-.tags-widget ul li a {
-    text-transform: uppercase;
-    display: block;
-    padding: 10px 15px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #97989b;
-    background-color: #323335;
-    border-radius: 2px;
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-}
-a {
-    color: #11151c;
-    -webkit-transition: 0.2s color;
-    transition: 0.2s color;
-}
-a {
-    color: #337ab7;
-    text-decoration: none;
-}
-a {
-    background-color: transparent;
-}
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-user agent stylesheet
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-ul, ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-user agent stylesheet
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-.tags-widget ul li {
-    display: inline-block;
-    margin-right: 4px;
-    margin-bottom: 6px;
-}
-
- 
+/*---------------------------------------
+---------------Cards-------------------
+---------------------------------------*/
 
 .image {
   position: relative;
@@ -601,11 +541,20 @@ ul, menu, dir {
   color: #555;
 }
 
-.title {
+.title{
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 20px;  
   color: #333;
+}
+
+.text-middle .title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.text-middle .cat {
+   color: #fff;
 }
 
 .post-meta a {
@@ -626,7 +575,7 @@ ul, menu, dir {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   border: 2px solid #111;
-  border-bottom: 5px solid #111;
+/*  border-bottom: 5px solid #111;*/
 }
 
 .pop {
@@ -677,7 +626,7 @@ ul, menu, dir {
 
 .card-details {
   position: absolute;
-   /*box-shadow: #222 3px 5px 1px 1px;*/
+   box-shadow: #222 3px 5px 1px 1px;
    max-width: 98%;
    max-height: 98%;
    top: 80%;
@@ -768,4 +717,115 @@ ul, menu, dir {
   opacity: 1;
 }
 
+.section-title {
+    position: relative;
+    margin-bottom: 20px;
+}
 
+.section-title .title {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    z-index: 20;
+
+}
+
+.section-title:after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    background-color: #e8eaed;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+    z-index: 10;
+}
+
+h4.card-title {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.feature-cover img{
+  height: 100vh;
+
+}
+
+.more-feature .card {
+  border-radius: 0;
+}
+
+@media (max-width:1150px) {
+  .feature-cover img{
+    height: 50vh;
+    
+  }
+
+  .text-middle {
+    top: 15%;
+  }
+}
+
+@media (max-width: 768px){
+  .text-middle .title {
+    font-size: 25px;
+  }
+}
+
+.card-title:before {
+  content: "";
+    display: inline-block;
+    height: 2px;
+    background-color: #e8eaed;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.featured .card img {
+  height: 350px;
+}
+
+
+
+
+/*.navi {
+    position:absolute;
+    top:20%;
+    z-index:10;
+    background: rgb(0, 0, 0); opacity: 0.7;
+    width:100%;
+}
+*/
+
+.cover-image {
+
+  background: url(../images/penny-schiereck-1267743-unsplash.jpg) center center no-repeat;
+  height: 75vh;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.post-text {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: bold;
+}

@@ -20,65 +20,57 @@
   </head>
   <body>
     
-    <div class="navbar navbar-dark bg-light justify-content-between align-items-center w-100" id="social-icons">
-  <div class="mt-5 pl-5">   
-    <ul class="navbar-nav navbar-expand-lg" id="social-circle">
-      <li><a href="" f="#" class="iconfb"><i class="fa fa-facebook fa-border"></i></a></li>
-      <li><a href="#" class="icontwitter"><i class="fa fa-twitter  fa-border"></i></a></li>
-      <li><a href="#" class="icongp"><i class="fa fa-google-plus  fa-border"></i></a></li>
-      <li><a href="#" class="iconinsta"><i class="fa fa-instagram  fa-border"></i></a></li>
-    </ul>
-          
+    <div class="navbar navbar-dark bg-light justify-content-between align-items-center w-100 mb-5">
+    <div class="pl-5">    
+      <ul class="navbar-nav navbar-expand-lg" id="social-circle">
+        <li><a href="" f="#" class="iconfb"><i class="fa fa-facebook fa-border"></i></a></li>
+        <li><a href="#" class="icontwitter"><i class="fa fa-twitter  fa-border"></i></a></li>
+        <li><a href="#" class="icongp"><i class="fa fa-google-plus  fa-border"></i></a></li>
+        <li><a href="#" class="iconinsta"><i class="fa fa-instagram  fa-border"></i></a></li>
+      </ul>         
+    </div>    
+    <div class="nav-logo">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Blogfog Logo.png" height="250" alt="">
+      </a>
+    </div>
   </div>  
+
+  <br>
+    <div class="header bg-light" id="header">
+      <div class="top-meta-data d-flex align-items-center justify-content-end">
+        <div class="navbar navbar-expand-lg justify-content-between align-items-center w-100 text-uppercase"><hr> 
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-3">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="features.html" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="" class="nav-link">Editors Choice</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="" class="nav-link">Archives</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="" class="nav-link">About</a>
+            </li>
+            <!--<div class="top-search-area">
+                <form action="index.html" method="post">
+                  <input type="search" name="top-search" id="topSearch" placeholder="Search...">
+                    <button type="submit" class="btn btn-dark"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>   -->  
+          </ul>
+        </div>
+      </div>
+    </div>
+
   
-  <div class="nav-logo">
-    <a href="index.html" class="logo">
-      <img src="assets/images/Blogfog Logo.png" alt="">
-    </a>
-  </div>
-</div>  
-
-<br>
-
-<div class="header bg-light" id="header">
-<div class="top-meta-data d-flex align-items-center justify-content-end">
-
-  <div class="navbar navbar-expand-lg justify-content-between align-items-center w-100">
-  <hr>  
-    <ul class="navbar-nav mx-auto text-center">
-      <li class="nav-item px-3">
-        <a href="" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item px-3">
-        <a href="" class="nav-link">Categories</a>
-      </li>
-      <li class="nav-item px-3">
-        <a href="" class="nav-link">Features</a>
-      </li>
-      <li class="nav-item px-3">
-        <a href="" class="nav-link">Editors Choice</a>
-      </li>
-      <li class="nav-item px-3">
-        <a href="" class="nav-link">Archives</a>
-      </li>
-      <li class="nav-item px-3">
-        <a href="" class="nav-link">About</a>
-      </li>
-
-<!--      <div class="top-search-area">
-          <form action="index.html" method="post">
-            <input type="search" name="top-search" id="topSearch" placeholder="Search...">
-              <button type="submit" class="btn btn-dark"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </form>
-      </div>   -->  
-
-    </ul>
-
-
-
-  </div>
-
-</div>
 </div>
     <section id="cover">
         
@@ -289,7 +281,7 @@
            <h1 class="display-5 p-3">Recent Posts</h1><hr>
             <div class="container">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 recent-card">
                   <div class="card-columns">
 
               <div class="card">
@@ -324,26 +316,33 @@
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
+              
 
             </div>
+             <div class="row">
+                <div class="col-md-12">
+                  <button class="btn btn-block btn-outline-light" id="btn-read">
+                            Load More
+                    </button>
+                </div>
+                  
+       
+      </div>
                 </div>
                 <div class="col-md-4">
-                   <div class="card w-100 text-center">
+                   <div class="card w-100 text-center side-content">
                     <div class="card-header bg-dark text-light">
                       Categories
                     </div>
                     
                       <ul class="list-group list-group-flush text-left">
                         <li class="list-group-item">Cras justo odio <span class="badge badge-secondary float-right">5</span></li>
-                        <li class="list-group-item">Dapibus ac facilisis in  <span class="badge badge-secondary float-right">9</span</li>
-                        <li class="list-group-item">Vestibulum at eros  <span class="badge badge-secondary float-right">7</span</li>
-                        <li class="list-group-item">Cras justo odio  <span class="badge badge-secondary float-right">9</span</li>
-                        <li class="list-group-item">Dapibus ac facilisis in  <span class="badge badge-secondary float-right">19</span</li>
-                        <li class="list-group-item">Vestibulum at eros  <span class="badge badge-secondary float-right">29</span</li>
-                        <li class="list-group-item">Cras justo odio  <span class="badge badge-secondary float-right">16</span</li>
-                        <li class="list-group-item">Dapibus ac facilisis in  <span class="badge badge-secondary float-right">14</span</li>
-                        <li class="list-group-item">Vestibulum at eros  <span class="badge badge-secondary float-right">8</span</li>
-
+                        <li class="list-group-item">Dapibus ac facilisis in <span class="badge badge-secondary float-right">9</span></li>
+                        <li class="list-group-item">Vestibulum at eros  <span class="badge badge-secondary float-right">7</span></li>
+                        <li class="list-group-item">Cras justo odio  <span class="badge badge-secondary float-right">9</span></li>
+                        <li class="list-group-item">Dapibus ac facilisis in  <span class="badge badge-secondary float-right">19</span></li>
+                        <li class="list-group-item">Vestibulum at eros  <span class="badge badge-secondary float-right">29</span></li>
+  
                       </ul>
                     
                   </div>
@@ -353,6 +352,82 @@
             
 
         </div>
+      </div>
+    </section>
+
+    <section id="travel">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 recent-card">
+              <div class="section-title">
+                <h2 class="title">Travel</h2>
+              </div>
+              <div class="card ">
+                <img src="assets/images/top-2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+               <div class="row">
+                <div class="col-md-12">
+                  <button class="btn btn-block btn-outline-light" id="btn-read">
+                            Load More
+                    </button>
+                </div>
+                  
+       
+                </div>
+        </div>
+        <div class="col-md-4 recent-card">
+              <div class="section-title">
+                <h2 class="title">Sports</h2>
+              </div>
+              <div class="card ">
+                <img src="assets/images/top-2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button class="btn btn-block btn-outline-light" id="btn-read">
+                            Load More
+                    </button>
+                </div>
+                  
+       
+                </div>
+        </div>
+        <div class="col-md-4 recent-card">
+              <div class="section-title">
+                <h2 class="title">Lifestyle</h2>
+              </div>
+              <div class="card ">
+                <img src="assets/images/top-2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button class="btn btn-block btn-outline-light" id="btn-read">
+                            Load More
+                    </button>
+                </div>
+                  
+       
+                </div>
+        </div>
+        </div>
+        
+
       </div>
       
     </section>
