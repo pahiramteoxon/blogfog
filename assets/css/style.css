@@ -1,4 +1,3 @@
-
 * {
 	margin:0;
 	padding: 0;
@@ -42,7 +41,7 @@ h1.display-5{
   #cover:after{
      content:"";
     position:absolute;
-    left:0;
+    left:0
     right:0;
     top:0;
     bottom:0;
@@ -153,6 +152,8 @@ width: 100%;
   padding-top: 102px;
 }*/
 
+
+
 /*----------------------------*\
   search area
 \*----------------------------*/
@@ -189,7 +190,7 @@ width: 100%;
   color: #222;
 }
 
-<<<<<<< HEAD
+
 /*----------------------------*\
   social-icons on navbar
 \*----------------------------*/
@@ -217,13 +218,12 @@ width: 100%;
   bottom: 5px;
 }
 
-/*#nav-div {
->>>>>>> 5d011ea0ed2159875327803f2dabf852298a1300
+#nav-div {
   text-align: center;
 }
 
 #social-circle li a{
-  display: inline-block;
+/*  display: inline-block;*/
 /*  border-radius: 50px;*/
   position: relative;
 /*  -moz-border-radius:50%;
@@ -421,6 +421,7 @@ width: 100%;
   font-weight: bold;
   text-align: center;
   padding: 5px;
+<<<<<<< HEAD
   font-family: 'Libre Baskerville', serif;
 }
 
@@ -567,3 +568,214 @@ ul, menu, dir {
     margin-right: 4px;
     margin-bottom: 6px;
 }
+=======
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*----------------------------*\
+  cards
+\*----------------------------
+
+#card {
+  display: inline-block;
+ /* border: .5px solid black;*/
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+ 
+}
+
+.image span{
+ position: absolute;
+ background-color:#444;
+ top: -5%;
+ left: 0%;
+ padding: 5px;
+ border-radius: 0px;  
+}
+
+.image span h4{
+ color: #fff; 
+ font-family: 'Oswald', sans-serif;
+}
+
+.cat {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  color: #555;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 20px;  
+  color: #333;
+}
+
+.post-meta a {
+  font-size: 13px;
+}
+
+#btn-read {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+#btn-read:hover {
+  background-color: #fff;
+  color: #111;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  border: 2px solid #111;
+  border-bottom: 5px solid #111;
+}
+
+.pop {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.number {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 45px;
+  padding: 15px;
+  color: #555;
+}
+
+.pop-cont {
+   display: flex;
+}
+
+.pop-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 16px;  
+  color: #333;
+}
+
+.pop-details {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;  
+  color: #333;
+}
+
+.rec-image img{
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+.card h4{
+ color: #111; 
+ font-size: 30px;
+ text-align: center;
+ font-family: 'Oswald', sans-serif;
+}
+
+.card-details {
+  position: absolute;
+   /*box-shadow: #222 3px 5px 1px 1px;*/
+   max-width: 98%;
+   max-height: 98%;
+   top: 80%;
+   background-color: #fff;
+}
+
+.card-details span{
+ position: absolute;
+ background-color:green;
+ opacity: .9;
+ top: -15%;
+ left: 40%;
+ padding: 5px;
+ border-radius: 0px;  
+}
+
+.card-details span h4{
+ color: #fff; 
+ font-family: 'Oswald', sans-serif;
+}
+
+.card-details span h3{
+ color: #fff; 
+ font-size: 17px;
+ text-align: center;
+ font-family: 'Oswald', sans-serif;
+}
+
+
+.card-details:hover {
+  position: absolute;
+   max-width: 98%;
+   max-height: 98%;
+   top: 80%;
+   box-shadow: #222 3px 3px 5px 8px;
+}
+
+.hovers {
+  display: none;
+
+}
+
+.buttonss {
+  position: relative;
+  display: flex;
+  line-height: 3px; 
+
+}
+
+#links {
+  border: 2px solid #222;
+  border-bottom: 4px solid #222;
+}
+
+.buttonss:hover .hovers {
+  display: block;
+}
+
+.buttonss:hover #links1,#links2,#links3 {
+  border: 2px solid #222;
+  border-bottom: 3px solid #222;
+}
+
+#links1:hover {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #222;
+  border-bottom: 3px solid #222;
+  transition-delay: .5s;
+  opacity: 1;
+}
+
+#links3:hover {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #222;
+  border-bottom: 3px solid #222;
+  transition-delay: .9s;
+  opacity: 1;
+}
+
+#links2:hover {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #222;
+  border-bottom: 3px solid #222;
+  transition-delay: .7s;
+  opacity: 1;
+}
+
+>>>>>>> 94ecb1a2a4d1ff28262000a869680384f2de66a6
