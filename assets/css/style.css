@@ -184,6 +184,10 @@ hr {
   social-icons on navbar
 \*----------------------------*/
 
+.social-icons {
+  margin-top: 30px;
+}
+
 #social-circle{
   display: inline;
   margin:0;
@@ -224,6 +228,11 @@ hr {
   display: inline-block;
 }
 
+.card-bg img {
+  background: rgba(0,0,0,0.8);
+}
+
+
 .text-middle {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
@@ -236,7 +245,10 @@ hr {
   right: 25%;
   text-align: center;
   text-overflow: hidden;
+
 }
+
+
 
 .feature-cover img {
   filter: brightness(50%);
@@ -422,7 +434,18 @@ hr {
   max-height: 300px;
 }*/
 
+.little-icon span {
+   display: inline-flex;
+}
 
+.line {
+  width: 55px;
+  height:3px;
+  background-color: grey;
+
+
+
+}
 
 
 /*----------------------------*\
@@ -1095,4 +1118,20 @@ h4.card-title {
   object-fit: cover;
 }
 
-
+.post-divider {
+  width: 80%;
+  background: url(../images/line.png) 0 50% repeat;
+  overflow: hidden;
+  margin-top: 50px;
+  height: 5px;
+  opacity: .1;
+ /* display: block;*/
+}
+/*.post-header {
+  width: 80%;
+  background: url(../images/more.png) 0 50% repeat;
+  overflow: hidden;
+  margin-top: 50px;
+  height: 5px;
+  display: block;
+}*/
