@@ -61,13 +61,13 @@ hr {
 
 /*---------Card Hover Box Shadow--------*/
 .card {
-  transition: box-shadow .3s;
+/*  transition: box-shadow .3s;
   border-radius:10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc;*/
 }
 
 .card:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.5); 
+ /* box-shadow: 0 0 11px rgba(33,33,33,.5); */
 }
 
 .card-deck img {
@@ -246,7 +246,7 @@ hr {
 }
 
 #social-circle li a{
-/*  display: inline-block;*/
+  display: inline-block;
 /*  border-radius: 50px;*/
   position: relative;
 /*  -moz-border-radius:50%;
@@ -580,7 +580,7 @@ footer {
 
 .pop {
   color: #333;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
   text-align: center;
   padding: 5px;
@@ -625,8 +625,8 @@ footer {
 }
 
 .card-details {
-  position: absolute;
-   box-shadow: #222 3px 5px 1px 1px;
+   position: absolute;
+/*   box-shadow: #222 3px 5px 1px 1px;*/
    max-width: 98%;
    max-height: 98%;
    top: 80%;
@@ -779,7 +779,7 @@ h4.card-title {
 }
 
 .card-title:before {
-  content: "";
+    content: "";
     display: inline-block;
     height: 2px;
     background-color: #e8eaed;
@@ -829,3 +829,172 @@ h4.card-title {
   line-height: 30px;
   font-weight: bold;
 }
+
+
+/*----------------------------*\
+  must read section
+\*----------------------------*/
+
+.must-read img {
+  height: 100%;
+  width: 100%;
+}
+
+.must-read h3 {
+  padding: 8px;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+
+/*----------------------------*\
+  bottom stay updated
+\*----------------------------*/
+
+.stay_updated h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  color: #111;
+  text-align: center;
+}
+
+.stay_updated h3 {
+ font-family: 'Kaushan Script', cursive;
+  font-size: 15px;
+  color: #444;
+  text-align: center;
+}
+
+.stay_updated input {
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+.stay_updated .btn {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-align: center;
+  background-color: #111;
+}
+
+/*----------------------------*\
+  side stay connected
+\*----------------------------*/
+
+#stay_connected{
+  display: inline;
+  margin:0;
+}
+
+
+#stay_connected li {
+  display: inline;
+  padding:2px;
+  margin: 0;
+  height: 100%;
+}
+
+#stay_connected li i{
+  
+}
+
+
+#stay_connected li a{
+  display: inline-block;
+/*  border-radius: 50px;*/
+  position: relative;
+/*  -moz-border-radius:50%;
+  -webkit-border-radius:50%;*/
+}
+
+#stay_connected i.fa{
+  color: black;
+  width: 60px;
+  font-size: 28px;
+  line-height: 50px;
+  border: 2px solid #666;
+  box-shadow: #222 3px 5px 1px 1px;
+}
+
+/*#stay_connected a {
+  color: #3A4E62;
+}*/
+
+
+#stay_connected a.iconfb:hover ,
+#stay_connected a.icontwitter:hover , 
+#stay_connected a.icongp:hover ,
+#stay_connected a.iconinsta:hover
+{
+  background-color:#222;
+
+}
+  
+
+#stay_connected a.iconfb i:hover , 
+#stay_connected a.icontwitter i:hover, 
+#stay_connected a.icongp i:hover, 
+#stay_connected a.iconinsta i:hover {
+  color: white;
+
+}
+  
+
+/*----------------------------*\
+ footer
+\*----------------------------*/
+
+#social-footer{
+  width: 100%;
+}
+
+#social-footer li {
+  display: inline;
+  padding:2px;
+  margin: 0;
+  height: 100%;
+}
+
+#social-footer li a{
+  display: inline-block;
+  position: relative;
+}
+
+#social-footer i.fa{
+  color: #fff;
+  width: 60px;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.tags-widget li {
+  list-style: none;
+}
+
+.tags-widget li a {
+  color: rgba(255,255,255,0.2);
+}
+.tags-widget li a:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+.footer-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.footer-img .st img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
+.footer-img .mid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
