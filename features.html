@@ -17,8 +17,8 @@
   </head>
   <body>
 
-	<div class="navbar navbar-dark bg-light justify-content-between align-items-center w-100 mb-5">
-		<div class="pl-5">		
+	<div class="navbar navbar-dark bg-light justify-content-between align-items-center w-100">
+		<div class="pl-5 pt-5 social-icons">		
 			<ul class="navbar-nav navbar-expand-lg" id="social-circle">
 				<li><a href="" f="#" class="iconfb"><i class="fa fa-facebook fa-border"></i></a></li>
 				<li><a href="#" class="icontwitter"><i class="fa fa-twitter  fa-border"></i></a></li>
@@ -26,15 +26,16 @@
 				<li><a href="#" class="iconinsta"><i class="fa fa-instagram  fa-border"></i></a></li>
 			</ul>					
 		</div>		
-		<div class="nav-logo">
+		<div class="nav-logo mb-">
 			<a href="index.html" class="logo">
-				<img src="assets/images/Blogfog Logo.png" height="250" alt="">
+				<img src="assets/images/Blogfog Logo.png" class="mb-5" height="250" alt="">
 			</a>
+		<!-- 	<div class="post-header mx-auto"></div> -->
 		</div>
 
 	</div>	
 
-	<br>
+<div class="sticky-top">	
 		<div class="header bg-light sticky-top" id="header">
 			<div class="top-meta-data d-flex align-items-center justify-content-end">
 				<nav class="navbar navbar-expand-lg justify-content-between  align-items-center w-100 text-uppercase"><hr>
@@ -53,7 +54,7 @@
 							<a href="categories.html" class="nav-link">Categories</a>
 						</li>
 						<li class="nav-item px-3">
-							<a href="features.html" class="nav-link">Features</a>
+							<a href="features.html" class="nav-link">Featured</a>
 						</li>
 						<li class="nav-item px-3">
 							<a href="" class="nav-link">Editors Choice</a>
@@ -82,8 +83,9 @@
 
 
 
-	<section class="featured">
+	<section class="featured">		
 		<div class="feature-cover">
+
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			  <ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -138,23 +140,32 @@
 			  </a>
 			</div>
 		</div>
-		<div class="container mt-3">
+		<div class="container mt-4">
+		    <hgroup>
+				<h1 class="editors-pick text-center">Featured Posts</h1>        
+			</hgroup>
 			<div class="card-deck h-100">
-			 <div class="card text-white">
-			  <img src="assets/images/joel-mott-1268054-unsplash.jpg" class="card-img img-fluid" alt="...">
-			  <div class="text-middle">
-			    <h5 class="card-title">Card title</h5>
-			  </div>
-			</div>
+			 <div class="card text-white" >
+			 	<div class="card-bg">	
+				  <img src="assets/images/joel-mott-1268054-unsplash.jpg" class="card-img img-fluid" alt="...">
+				</div>  
+				  <div class="text-middle">
+				    <h5 class="card-title">Card title</h5>
+				  </div>
+			 </div>
 			  <div class="card text-white">
-			  <img src="assets/images/reka-matyas-1269597-unsplash.jpg" class="card-img" alt="...">
+			  	<div class="card-bg">
+			  		<img src="assets/images/reka-matyas-1269597-unsplash.jpg" class="card-img" alt="...">
+			  	</div>	
 			  <div class="text-middle">
 			    <h5 class="card-title">Card title</h5>
 			    
 			  </div>
 			</div>
 			  <div class="card  text-white">
-			  <img src="assets/images/christine-wehrmeier-1270595-unsplash.jpg" class="card-img" alt="...">
+			  	<div class="card-bg">
+			 		<img src="assets/images/christine-wehrmeier-1270595-unsplash.jpg" class="card-img" alt="...">
+			 	</div>		
 			  <div class="text-middle">
 			    <h5 class="card-title">Card title</h5>
 			  
@@ -408,6 +419,94 @@
 			</div>
 		</div>
 	</section>
+
+</div>
+
+<footer>
+<div class="container">
+ <div class="row">
+
+    <div class="col-md-6">
+   
+<!--     <div class="col-md-12">
+    <div class="row footer-img mt-5">
+    	<div class="col-md-4 st" >
+    		<img src="assets/images/1.jpg" class="img-responsive">
+    	</div>
+    	<div class="col-md-4 mid pt-4">
+    		<img src="assets/images/2.jpg" class="img-responsive">
+    	</div>
+    	<div class="col-md-4 st">
+    		<img src="assets/images/3.jpg" class="img-resp	onsive">
+    	</div>
+    </div>
+    </div>	 -->
+
+    </div>
+         
+    <div class="col-md-2">
+                 Quick Links
+        <div class="tags-widget">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Editor's Choice</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+            Archives
+    </div>
+
+    <div class="col-md-2">
+            Categories
+        <div class="tags-widget">
+            <ul>
+                <li><a href="#">Social</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Life</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Magazine</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Health</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class="header" id="header">
+
+<div class="post-divider mx-auto"></div>
+
+<div class="top-meta-data d-flex align-items-center justify-content-end">
+	<div class="navbar navbar-expand-lg justify-content-between align-items-center w-100 text-uppercase" id="social-footer">
+	<hr>	
+		<ul class="navbar-nav mx-auto text-center">
+			<li><a href="#" class="iconfb"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#" class="icontwitter"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#" class="icongp"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="#" class="iconinsta"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+	</div>
+</div>
+
+</div>
+</footer>
+
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
