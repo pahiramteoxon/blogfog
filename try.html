@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,600i,700" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="card-container" data-offset="2">
+   <div class="pg">
+      <img src="assets/images/deadpool.png">
+   </div>
+   <div id="card">
+      <div class="shine"></div>
+      <div class="text-block">
+         <h1>Deadpool <small>(2016)</small></h1>
+         <h3>Action, Adventure, Sci-Fi</h3>
+         <p>
+            Deadpool is a 2016 American superhero film based on the Marvel Comics character of the same name. It is the eighth installment of the X-Men film series, and is directed by Tim Miller.
+         </p>
+         <button>Watch Trailer</button>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var $poster = $('#card-container'),
+  $shine = $('.shine'),
+  w = $(window).width(),
+  h = $(window).height();
+
+$(window).on('mousemove', function(e) {
+  var offsetX = 0.5 - e.pageX / w,
+    offsetY = 0.5 - e.pageY / h,
+    dy = e.pageY - h / 2,
+    dx = e.pageX - w / 2,
+    theta = Math.atan2(dy, dx),
+    angle = theta * 180 / Math.PI - 90,
+    offsetPoster = $poster.data('offset'),
+    transformPoster = 'translateY(' + -offsetX * offsetPoster + 'px) rotateX(' + (-offsetY * offsetPoster) + 'deg) rotateY(' + (offsetX * (offsetPoster * 2)) + 'deg)';
+
+  if (angle < 0) {
+    angle = angle + 360;
+  }
+  $shine.css('background', 'linear-gradient(' + angle + 'deg, rgba(0,0,0,' + (e.pageY / h /5)  + ') 0%,rgba(0,0,0,.25) 80%)');
+
+  $poster.css('transform', transformPoster);
+});
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
