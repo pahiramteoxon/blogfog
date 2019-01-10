@@ -1625,7 +1625,7 @@ ol.comment-list {
     position: relative;
 }
 
-.bird {
+/*.bird {
     background-image: url(../images/fly.gif);
     background-size: auto 100%;
     width: 100px;
@@ -1678,9 +1678,9 @@ ol.comment-list {
     animation-duration: 1.1s;
     -webkit-animation-delay: -0.5s;
     animation-delay: -1.25s;
-}
+}*/
 
-.bird-container {
+/*.bird-container {
     position: absolute;
     top: 20%;
     left: -7.5vw;
@@ -1694,9 +1694,9 @@ ol.comment-list {
     animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-}
+}*/
 
-.bird-container--one {
+/*.bird-container--one {
     -webkit-animation-duration: 13s;
     animation-duration: 13s;
     -webkit-animation-delay: 0;
@@ -1791,7 +1791,7 @@ ol.comment-list {
  -webkit-transform: translateY(0vh) scale(0.6);
  transform: translateY(0vh) scale(0.4);
 }
-}
+}*/
 
 /*----------------------------*\
   footer end-
