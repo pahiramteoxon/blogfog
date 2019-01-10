@@ -6,7 +6,7 @@
 
 html, body {
 	height: 100%;
-  width: 100%;
+/*  width: 100%;*/
   background: #fff;
   
 }
@@ -24,6 +24,8 @@ hr {
   background-color: #2c2f33;
   height: 2px;
 }
+
+
 
 .must-reads
 {
@@ -98,8 +100,10 @@ box-shadow: 0px 0px 20px 4px rgba(81,81,81,0.95);
   overflow: hidden;
 }
 
+
 .text-overlay span {
   border-radius: 0 !important;
+
 }
 
 .image-wrapper .card {
@@ -127,9 +131,7 @@ box-shadow: 0px 0px 20px 4px rgba(81,81,81,0.95);
   background-color: #2c2f33;
 }
 
-.header {
-	width: 100%;
-}
+
 
 /*#header {
   position: fixed;
@@ -176,15 +178,105 @@ box-shadow: 0px 0px 20px 4px rgba(81,81,81,0.95);
 }
 
 /*----------------------------*\
-  navbar
+  navbar -- header
 \*----------------------------*/
 
+.header {
+  width: 100%;
+/*  margin-top: 10px;*/
+  background-color:#c4cbd2;
+  /*position: absolute;*/
+}
 
-.navbar-nav .nav-item a {
-  color: #222;
+#footer {
+  width: 100%;
+}
+
+.navbar-brand img {
+  position: absolute; 
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand h4 {
+  position: relative; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: #111;
+}
+/*.navbar-nav .nav-item .nav-link {
+    color: #111;
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+}
+*/
+.navbar-light .navbar-nav .nav-link {
+    color: #111;
+    font-size:15px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#nav-linkz {
+    color: #111;
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#nav-linkz:hover , .nav-linkz:focus {
+  border-bottom: 3px solid #111;
+  color: #111;
+  font-weight: normal;
+}
+
+.navbar-light .navbar-nav .nav-link:hover , .navbar-light .navbar-nav .nav-link:focus {
+  border-bottom: 3px solid #111;
+  color: #111;
+  font-weight: normal;
 }
 
 
+
+/*.navbar-light {
+  color: #111;
+}*/
+
+@media only screen and (max-width: 400px;){
+
+.navbar-brand img {
+  position: absolute; 
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand h4 {
+  position: relative; 
+/*  padding: 5px;*/
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
+}
+
+@media (min-width: 1024px) {
+.container {
+    max-width: 1000px;
+}
+
+}
+
+@media (min-width: 1000px) {
+.container {
+    max-width: 960px;
+}
+}
+
+@media (min-width: 960px) {
+.container {
+    max-width: 900px;
+}
+}
 /*----------------------------*\
   social-icons on navbar
 \*----------------------------*/
@@ -214,7 +306,39 @@ box-shadow: 0px 0px 20px 4px rgba(81,81,81,0.95);
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
+  padding-top: 100px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+@media only screen and (max-width: 1024px;){
+   .text-overlay { 
+      width: 100%; 
+       height: 100%;
+       padding-top: 0px;
+    }
+   .text-overlay h4{ 
+      font-size: 1.5rem;
+      text-align: justify;
+      width: 100%; 
+   }
+   .text-overlay h3{
+      font-size: 1.75rem;
+      text-align: justify;
+      width: 100%; 
+   }
+
+  .text-overlay h6{
+      font-size: 1rem;
+      text-align: justify;
+      width: 100%; 
+   }
+
+   .text-overlay p{
+      font-size: 1rem;
+      text-align: justify;
+      width: 100%; 
+   }
 }
 .text-900 {
   font-family: 'Lato', sans-serif;
@@ -309,7 +433,7 @@ box-shadow: 0px 0px 20px 4px rgba(81,81,81,0.95);
 \*----------------------------*/
 
 .banner{
-  background:url(../images/darkdawn.jpg);
+  background:url(../images/john-paul-henry-708151-unsplash.jpg);
   text-align: center;
   color: #fff;
    
@@ -322,7 +446,7 @@ box-shadow: 0px 0px 20px 4px rgba(81,81,81,0.95);
   background-size: cover;
 }
 .banner .row {
-background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .banner-text{
@@ -330,7 +454,7 @@ background-color: rgba(0,0,0,0.8);
   
 }
 .banner-heading{
-  font-family: 'Kaushan+Script', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 70px;
   font-weight: 700;
   line-height: 100px;
@@ -338,7 +462,8 @@ background-color: rgba(0,0,0,0.8);
   color:#fff;
 }
 .banner-sub-heading{
-  font-family: 'Libre Baskerville', serif;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
@@ -364,46 +489,50 @@ background-color: rgba(0,0,0,0.8);
 
 
 /* mobile view */
-@media (max-width:500px)
+@media (max-width:768px;)
 {
 
 .navbar-nav
 {
-    background-color:#000;
     border-top:3px solid #fed136;
-    color:#fff;
-    z-index:1;
+    /*z-index:1;*/
     margin-top:5px;
+
 }
 
 .navbar-nav .nav-item .nav-link
 {
-  padding: 0.7em 1em!important;
+/*  padding: 0.7em 1em!important;*/
   font-size: 100%;
-    font-weight: 500;
+  font-weight: 500;
 }
 
-/*.banner-text
-{
-  padding:150px 0 150px 0;
 }
 
-.banner-heading
-{
-  font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 20px;
+
+@media (max-width: 810px) {
+
+#featured-card .card-deck .card {
+    display: flex;
+    flex: 1 0 0%;
+    flex-direction: row;
+/*    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;*/
+}
 }
 
-.banner-sub-heading
-{
-  font-size: 10px;
-    font-weight: 200;
-    line-height: 10px;
-    margin-bottom: 40px;
-}*/
+@media (max-width: 760px) {
 
+.card-deck {
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
+}
+
+
 
 @media (max-width:768px){
   .banner-text{
@@ -1317,7 +1446,7 @@ ol.comment-list {
 
 .box {
   position: relative;
-  width: 900px;
+/*  width: 900px;*/
   height: 350px;
   left:  50%;
   top: 50%;
@@ -1401,7 +1530,7 @@ ol.comment-list {
   z-index: 1;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 810px){
    .box { 
       width: 90%; 
     }
@@ -1478,6 +1607,17 @@ ol.comment-list {
   height: 100%;
   object-fit: cover;
 }
+
+@media (min-width: 425px) {
+.navbar-expand-sm {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+}
+
+
 
 .container-s {
     position: relative;
@@ -1697,10 +1837,11 @@ ol.comment-list {
 .featured-pic .banner-sub-heading h6{
   color: #888;
   font-size:1rem;
+  text-align: justify;
   font-family: 'Open Sans', sans-serif;
 }
 
-@media (max-width:1024px;){
+@media (max-width:900px;){
   .featured-pic .banner-text{
    /* padding:50px 0 50px 0;*/
 }
@@ -1709,7 +1850,14 @@ ol.comment-list {
     font-weight: 200;
     line-height: 23px;
     margin-bottom: 40px;
+    margin: 5px;
+    text-align: justify;
 }
+
+/*#contents {
+  padding: 10px;
+}*/
+
 }
 
 #black {
@@ -1736,25 +1884,25 @@ ol.comment-list {
   font-family: 'Open Sans', sans-serif;
 }
 
-#content {
+#contents {
   background-color: #171717;
 }
 
-#content h6 {
+#contents h6 {
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
   color:  #FAEBD7;
   font-size: 17px;
 }
 
-#content h5 {
+#contents h5 {
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
   color:  #FF7F50;
   font-size: 17px;
 }
 
-#content #details {
+#contents #details {
   font-size: 11px;
   text-align: justify;
   color: #888;
