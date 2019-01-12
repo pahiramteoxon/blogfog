@@ -1587,9 +1587,9 @@ height: 100%;
     display: block;
 }
 
-.content-side {
+/*.content-side {
   margin-top: 115px;
-}
+}*/
 
 .comments-area > h3, .comment-form > h3, .similar-post > h3 {
     line-height: 1;
