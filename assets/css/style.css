@@ -16,8 +16,11 @@ section {
 }
 
 h1.display-5{
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
 hr {
@@ -578,23 +581,9 @@ box-shadow: 0px 0px 20px 4px rgba(81,81,81,0.95);
 
 .line {
   width: 55px;
-  height:3px;
+  height:3px !important;
   background-color: grey;
 }
-
-@media (max-width:400px){
-/*.little-icon span {
-   display: inline-flex;
-}*/
-
-.line {
-  width: 35px;
-  height:50%;
-  background-color: grey;
-}
-}
-
-
 
 /*----------------------------*\
   banner
@@ -731,9 +720,8 @@ footer {
 }
 
 .image img {
-  height: 100%;
-  width: 100%;
- 
+  height: 88%;
+  width: 100%; 
 }
 
 .image span{
@@ -753,11 +741,32 @@ footer {
 .cat {
   font-family: 'Kaushan Script', cursive;
   font-size: 20px;
-  color: rgba(255,255,255,0.6);
-  animation-name: topFadeOut;
+  color: rgba(0,0,0,0.5);
+/*  animation-name: topFadeOut;
   animation-duration: 4s;
-  opacity: 1;
+  opacity: 1;*/
 }
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+  position: relative;
+}
+
+.cardss p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+
+.cardss .post-date {
+  font-size: 12px;
+  color: rgba(0,0,0,0.5);
+}
+
+
 
 .text-middle .title {
   font-family: 'Oswald', sans-serif;
@@ -784,6 +793,8 @@ footer {
    color: #fff;
 
 }
+
+
 
 @keyframes topFadeOut {
   0% {
@@ -958,6 +969,27 @@ footer {
   height: 100%;
   width: 100%;
   padding: 5px;
+  border-radius: 50px;
+}
+
+.recs-image img{
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+@media (max-width:991px) {
+.rec-image img{
+  padding: 5px;
+  width: 35%;
+  height: 80%;
+}
+
+#recent_comments .row {
+  display: inline-block;
+  align-items: center;
+  margin: auto;
+}
 }
 
 .card h4{
@@ -981,7 +1013,7 @@ footer {
  background-color:green;
  opacity: .9;
  top: -15%;
- left: 40%;
+ left: 37%;
  padding: 5px;
  border-radius: 0px;  
 }
@@ -1027,13 +1059,13 @@ footer {
 .buttonss {
   position: relative;
   display: flex;
-  line-height: 3px; 
+  line-height: 2px; 
 
 }
 
 #links {
   border: 2px solid #222;
-  border-bottom: 4px solid #222;
+  border-bottom: 3px solid #222;
 }
 
 .buttonss:hover .hovers {
@@ -1167,7 +1199,7 @@ h4.card-title {
 
 .cover-image {
 
-  background: url(../images/penny-schiereck-1267743-unsplash.jpg) center center no-repeat;
+  background: url(../images/p2.jpg) center center no-repeat;
   height: 75vh;
   color: #fff;
   background-repeat: no-repeat;
@@ -1177,6 +1209,14 @@ h4.card-title {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+}
+
+.cover-image .rowc {
+
+background:rgba(0,0,0,0.5);
+width: 100%;
+height: 100%;
 
 }
 
@@ -1348,34 +1388,6 @@ h4.card-title {
   side stay connected
 \*----------------------------*/
 
-@media (max-width: 991px),(min-width: 475px){
-#stay_connected li{
-  display: inline;
-}
-
-#stay_connected li i.fa{
-  color: black;
-  width: 90px;
-  font-size: 48px;
-  line-height: 80px;
-  border: 2px solid #666;
-  box-shadow: #222 3px 5px 1px 1px;
-}
-}
-@media (max-width: 474px),(min-width: 400px){
-#stay_connected li{
-  display: inline;
-}
-
-#stay_connected li i.fa{
-  color: black;
-  width: 70px;
-  font-size: 28px;
-  line-height: 60px;
-  border: 2px solid #666;
-  box-shadow: #222 3px 5px 1px 1px;
-}
-}
 
 @media (max-width: 399px),(min-width: 350px){
 #stay_connected li{
@@ -1392,6 +1404,36 @@ h4.card-title {
 }
 }
 
+@media (max-width: 474px){
+#stay_connected li{
+  display: inline;
+}
+
+#stay_connected li i.fa{
+  color: black;
+  width: 70px;
+  font-size: 28px;
+  line-height: 60px;
+  border: 2px solid #666;
+  box-shadow: #222 3px 5px 1px 1px;
+}
+}
+
+@media (max-width: 991px){
+#stay_connected li{
+  display: inline;
+}
+
+#stay_connected li i.fa{
+  color: black;
+  width: 90px;
+  font-size: 48px;
+  line-height: 80px;
+  border: 2px solid #666;
+  box-shadow: #222 3px 5px 1px 1px;
+}
+}
+
 
 #stay_connected{
   display: inline;
@@ -1403,7 +1445,7 @@ h4.card-title {
   display: inline;
   padding:2px;
   margin: 0;
-  height: 100%;
+  height: 90%;
 }
 
 #stay_connected li i{
@@ -1421,9 +1463,9 @@ h4.card-title {
 
 #stay_connected i.fa{
   color: black;
-  width: 50px;
+  width: 20px;
   font-size: 28px;
-  line-height: 40px;
+  line-height: 0px;
   border: 2px solid #666;
   box-shadow: #222 3px 5px 1px 1px;
 }
@@ -1501,6 +1543,11 @@ h4.card-title {
     padding-left: 25px;
 }
 
+#footer-about .card {
+  background-color: transparent;
+  border: solid transparent;
+}
+
 
 .about-me {
     position: relative;
@@ -1534,7 +1581,6 @@ h4.card-title {
     position: relative;
     width: 118px;
     height: 118px;
-    margin: 60px auto 15px;
     border: 5px solid #FFF;
     border-radius: 100%;
     background-color: #e9e9e9;
@@ -1994,7 +2040,9 @@ ol.comment-list {
 \*----------------------------*/
 
 .featured-pic-img{
-  background: url(../images/joel-mott-1268054-unsplash.jpg);
+
+  background:url(../images/f1.jpg);
+
 /*  text-align: center;*/
   color: #fff;
    
